@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro contato com Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-200">
+    <header class="w-full h-14 bg-white border-b-8 border-green-400 flex justify-between items-center px-6 mb-4">
+      <p class="font-sans text-lg font-bold">Logo</p>
+      <p class="font-sans text-lg font-bold">Menu</p>
+    </header>
+    <main class="px-8 md:px-10 lg:px-12">
+      <section class="flex justify-center items-center gap-6 md:gap-7 lg:gap-8 mb-6 md:mb-8 lg:mb-10">
+        <div class="bg-blue-500 h-36 md:h-40 lg:h-52 w-full rounded-xl text-center ">
+          <p class="text-white text-sm md:text-2xl lg:text-3xl font-semibold">Lorem</p>
+        </div>
+        <div class="bg-red-500 h-36 md:h-40 lg:h-52 w-full rounded-xl flex justify-around items-center">
+          <p class="text-white text-sm md:text-2xl lg:text-3xl font-semibold">Lorem</p>
+          <p class="text-white text-sm md:text-2xl lg:text-3xl font-semibold">Lorem</p>
+        </div>
+      </section>
+      <section class="flex justify-center gap-6 md:gap-7 lg:gap-8 mb-6 md:mb-8 lg:mb-10">
+        <div class="bg-gray-500 h-36 md:h-40 lg:h-52 w-full rounded-xl text-end">
+          <p class="text-white text-sm md:text-2xl lg:text-3xl font-semibold p-2 lg:p-8">Lorem</p>
+        </div>
+        <div class="bg-orange-500 h-36 md:h-40 lg:h-52 w-full rounded-xl flex justify-center items-center">
+          <p class="text-white text-sm md:text-2xl lg:text-3xl font-semibold">Lorem</p>
+        </div>
+        <div class="bg-cyan-500 h-36 md:h-40 lg:h-52 w-full rounded-xl border-red-500 border-4 lg:border-8"></div>
+      </section>
+      <section class="grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-6 md:gap-7 lg:gap-8 mb-6 md:mb-8 lg:mb-10">
+        <div class="w-full h-36 md:h-40 lg:h-52 flex justify-center items-center">
+          <div class="bg-gray-500 rounded-xl aspect-video h-16 md:h-20 lg:h-24 flex justify-center items-center shadow-xl shadow-blue-500">
+            <p class="text-white text-sm md:text-2xl lg:text-3xl font-semibold">Shadow</p>
+          </div>
+        </div>
+        <div class="bg-yellow-500 h-36 md:h-40 lg:h-52 w-full rounded-xl"></div>
+        <div class="bg-blue-700 h-36 md:h-40 lg:h-52 w-full rounded-xl"></div>
+        <div class="bg-green-800 h-36 md:h-40 lg:h-52 w-full rounded-xl"></div>
+      </section>
+      <section class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 justify-center items-center gap-6 md:gap-7 lg:gap-8 mb-6 md:mb-8 lg:mb-10">
+        <div class="bg-black h-36 md:h-40 lg:h-52 w-full rounded-xl"></div>
+        <div class="bg-yellow-500 h-36 md:h-40 lg:h-52 w-full rounded-xl"></div>
+        <div class="bg-blue-700 h-36 md:h-40 lg:h-52 w-full rounded-xl"></div>
+        <div class="bg-green-800 h-36 md:h-40 lg:h-52 w-full rounded-xl"></div>
+        <div class="md:col-start-2 bg-blue-700 h-36 md:h-40 lg:h-52 w-full rounded-xl"></div>
+        <div class="md:col-start-3 bg-green-800 h-36 md:h-40 lg:h-52 w-full rounded-xl"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="h-36 bg-gradient-to-r from-blue-500 via-yellow-500 to-pink-500 flex justify-center items-center">
+        <p class="text-2xl md:text-4xl lg:text-6xl">Rodapé com gradiente</p>
+      </div>
+    </footer>
+  </body>
+</html>
