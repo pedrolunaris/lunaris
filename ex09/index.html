@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de DEVs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f0f8ff]">
+    <main class="text-[#595682] font-sans lg:text-lg px-[8%] lg:px-[10%] mx-auto">
+        <section class="text-center pt-4 md:pt-6 lg:pt-8 mb-6 lg:mb-8">
+            <h1 class="text-[#300859] font-bold text-2xl md:text-3xl lg:text-4xl lg:mb-2">Cadastro de DEVs</h1>
+            <p class="text-black text-sm md:text-base lg:text-lg">Complete suas informações</p>
+        </section>
+        <form action="#">
+            <section class="font-bold md:grid md:grid-cols-2 md:gap-x-6 md:mb-4 ">
+                <div class="mb-3">
+                    <label for="nome">Nome</label>
+                    <input class="w-full rounded shadow shadow-gray-500" id="nome" type="text">
+                </div>
+                <div class="mb-3">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input class="w-full rounded shadow shadow-gray-500" id="sobrenome" type="text">
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email</label>
+                    <input class="w-full rounded shadow shadow-gray-500" id="email" type="email">
+                </div>
+            </section>
+            <section>
+                <div class="mb-4">
+                    <label class="block font-bold mb-1 lg:mb-2">De qual lado da aplicação você desenvolve?</label>                    
+                    <div class="lg:ml-2">
+                        <div class="mb-1">
+                            <input type="radio" name="devweb" value="frontend" id="frontend" checked>
+                            <label for="frontend">
+                                Front-end
+                            </label>
+                        </div>
+                        <div class="mb-1">
+                            <input type="radio" name="devweb" value="backend" id="backend">
+                            <label class="mb-1" for="backend">
+                                Back-end
+                            </label>
+                        </div>
+                        <div class="mb-1">
+                            <input type="radio" name="devweb" value="fullstack" id="fullstack">
+                            <label class="mb-1" for="fullstack">
+                                Fullstack
+                            </label>
+                        </div>
+                    </div>                
+                </div>
+                <div class="mb-4 lg:mb-6">
+                    <label class="block font-bold mb-2" for="senioridade">Senioridade</label>
+                    <select class="rounded shadow shadow-gray-500 md:w-2/12" id="senioridade">
+                        <option selected disabled value="">Selecione</option>
+                        <option value="junior">Junior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                </div>
+                <fieldset class="mb-4 lg:mb-6">
+                    <label class="block font-bold mb-1 lg:mb-2">Selecione as tecnologias que utiliza:</label>
+                    <div class="grid grid-cols-3 min-[460px]:grid-cols-4 md:flex md:justify-around">
+                        <div>
+                            <input type="checkbox" name="html" id="html">
+                            <label for="html">HTML</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="css" id="css">
+                            <label for="css">CSS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="javascript" id="javascript">
+                            <label for="javascript">JavaScript</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="php" id="php">
+                            <label for="">PHP</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="c#" id="c#">
+                            <label for="c#">C#</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="python" id="python">
+                            <label for="python">Python</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="java" id="java">
+                            <label for="java">Java</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="mb-6 md:mb-8 lg:mb-10">
+                    <label class="block font-bold mb-2 lg:mb-4" for="experiencia">Conte um pouco mais da sua experiência:</label>
+                    <textarea class="block w-full md:w-10/12 border-2 rounded shadow shadow-gray-500 mx-auto" name="experiencia" id="experiencia" rows="5"></textarea>
+                </div>
+            </section>
+            <button class="block bg-[#423074] rounded-md text-[#f0f8ff] lg:text-xl shadow shadow-gray-900 px-3 lg:px-4 py-1 lg:py-2 mx-auto mb-8" type="submit">Concluído</button>
+        </form>
+    </main>
+</body>
+</html>
