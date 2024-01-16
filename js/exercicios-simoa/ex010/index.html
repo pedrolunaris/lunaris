@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="lg:grid lg:grid-cols-3">
+      <div class="lg:hidden">
+        <img
+          class="w-full md:hidden"
+          src="https://conasems-ava-prod.s3.sa-east-1.amazonaws.com/institucional/homebanners/papel-de-parede-cima-1704911589.png"
+          alt="Wallpaper with green background and leaves drawing"
+        />
+        <img
+          class="w-full absolute hidden md:block"
+          src="https://conasems-ava-prod.s3.sa-east-1.amazonaws.com/institucional/homebanners/papel-de-parede-back-md-1704911803.png"
+          alt="Wallpaper with green background and leaves drawing"
+        />
+      </div>
+      <div class="hidden lg:block">
+        <img
+          class="w-full"
+          src="https://conasems-ava-prod.s3.sa-east-1.amazonaws.com/institucional/homebanners/papel-de-parede-lado-lg-1704911696.png"
+          alt="Wallpaper with green background and leaves drawing"
+        />
+      </div>
+      <div
+        class="md:w-8/12 lg:w-full lg:col-span-2 md:bg-white md:fixed lg:static md:top-1/4 md:left-1/2 lg:inset-0 md:-translate-x-1/2 lg:translate-x-0 pt-6 lg:self-center lg:justify-self-center lg:px-[7%] xl:px-[10%]"
+      >
+        <h1 class="pl-4 mb-6">
+          <span class="text-4xl xl:text-5xl font-bold text-[#5F7C8D]"
+            >Olá,</span
+          >
+          <span class="text-2xl xl:text-3xl text-[#567281]">você!</span>
+        </h1>
+        <div
+          class="text-2xl xl:text-3xl font-bold flex justify-center gap-2 w-full mb-6 xl:mb-8"
+        >
+          <div class="border-b-2 border-[#5F7C8D] px-2 pb-1">
+            <h2 class="text-[#5F7C8D]">Login</h2>
+          </div>
+          <h2 class="text-[#5F7C8D39]">SignUp</h2>
+        </div>
+        <form class="w-10/12 lg:w-8/12 mx-auto" id="myForm">
+          <label class="sr-only" for="useremail"> </label>
+          <input
+            class="border-b-2 border-[#5F7C8D] w-full pb-2 mb-6"
+            type="email"
+            id="useremail"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <label for="userpass"> </label>
+          <input
+            class="border-b-2 border-[#5F7C8D] w-full pb-2 mb-10 xl:mb-12"
+            type="password"
+            id="userpass"
+            name="password"
+            placeholder="Enter your password"
+          />
+          <input
+            class="w-full xl:text-xl text-white font-semibold bg-[#4B687A] p-2 mb-10"
+            type="submit"
+            value="Login"
+            id="loginbutton"
+          />
+        </form>
+      </div>
+      <img
+        class="w-full md:hidden"
+        src="https://conasems-ava-prod.s3.sa-east-1.amazonaws.com/institucional/homebanners/papel-de-parede-baixo-1704911765.png"
+        alt="Wallpaper with green background and leaves drawing"
+      />
+    </main>
+    <script>
+      function handleSubmit(evt) {
+        evt.preventDefault();
+
+        const user = "lunaris@simoa.com";
+        const password = "12345";
+
+        const emailElement = document.getElementById("useremail");
+        const passwordElement = document.getElementById("userpass");
+        const loginemail = emailElement.value;
+        const loginpass = passwordElement.value;
+
+        if (loginemail === "" || loginpass === "") {
+          alert(
+            "Please, insert your email and password in their respective spaces."
+          );
+        } else if (loginemail != user || loginpass != password) {
+          alert("Please, check your email and password.");
+        } else if (loginemail == user && loginpass == password) {
+          alert("Your login is succesfull.");
+        }
+      }
+
+      const myForm = document.getElementById("myForm");
+      myForm.addEventListener("submit", handleSubmit);
+    </script>
+  </body>
+</html>
